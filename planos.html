@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos VIP - GamerConnections</title>
+    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="icon" type="image/png" href="assets/logo.png?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-requires-auth>
+    <div class="bg-animation"></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="assets/logo.png?v=2" alt="GamerConnections">
+                <span class="logo-text">GamerConnections</span>
+            </a>
+            <nav class="nav">
+                <a href="planos.html" class="nav-link active">Planos</a>
+                <a href="loja.html" class="nav-link">Loja</a>
+                <a href="login.html" class="btn btn-primary">Entrar</a>
+                <a href="register.html" class="btn btn-secondary">Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-badge"><span class="dot"></span>Oferta de lançamento — 30% OFF no anual</span>
+                <h1 class="page-title">Desbloqueie o <span class="gradient-text">modo ELITE</span></h1>
+                <p class="page-subtitle">Mais matches, mais destaque, mais loot. Cancele quando quiser.</p>
+                <div class="billing-toggle" role="group" aria-label="Período de cobrança">
+                    <button type="button" class="billing-option active" data-period="monthly">Mensal</button>
+                    <button type="button" class="billing-option" data-period="yearly">Anual <span class="save-tag">-30%</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- FREE -->
+                    <article class="price-card">
+                        <h3>Free</h3>
+                        <p class="price-desc">Para começar a jogar</p>
+                        <div class="price"><span class="currency">R$</span>0<span class="period">/sempre</span></div>
+                        <ul class="price-features">
+                            <li>5 matches por dia</li>
+                            <li>Perfil gamer básico</li>
+                            <li>Chat de texto</li>
+                            <li class="off">Voice chat integrado</li>
+                            <li class="off">Perfil em destaque</li>
+                            <li class="off">Selo VIP</li>
+                        </ul>
+                        <button type="button" class="btn btn-outline btn-full" data-plan="free">Plano atual</button>
+                    </article>
+
+                    <!-- VIP -->
+                    <article class="price-card featured">
+                        <span class="featured-tag">Mais popular</span>
+                        <h3><img src="assets/icons/crown.png" alt="" width="22" height="22"> VIP</h3>
+                        <p class="price-desc">Para quem joga pra valer</p>
+                        <div class="price"><span class="currency">R$</span><span data-price="vip">19,90</span><span class="period" data-period-label>/mês</span></div>
+                        <ul class="price-features">
+                            <li><strong>Matches ilimitados</strong></li>
+                            <li>Voice chat integrado</li>
+                            <li>Perfil em destaque</li>
+                            <li>Selo VIP no perfil</li>
+                            <li>1 boost de perfil/semana</li>
+                            <li>Sem anúncios</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary btn-full btn-large" data-plan="vip" data-name="VIP" data-monthly="19.90" data-yearly="167.16">Assinar VIP</button>
+                    </article>
+
+                    <!-- ELITE -->
+                    <article class="price-card elite">
+                        <h3><img src="assets/icons/diamond.png" alt="" width="22" height="22"> ELITE</h3>
+                        <p class="price-desc">O arsenal completo</p>
+                        <div class="price"><span class="currency">R$</span><span data-price="elite">34,90</span><span class="period" data-period-label>/mês</span></div>
+                        <ul class="price-features">
+                            <li><strong>Tudo do VIP</strong></li>
+                            <li>Dogtag exclusiva grátis</li>
+                            <li>Boosts ilimitados</li>
+                            <li>Badge animada no perfil</li>
+                            <li>Acesso antecipado a novidades</li>
+                            <li>Suporte prioritário</li>
+                        </ul>
+                        <button type="button" class="btn btn-secondary btn-full btn-large" data-plan="elite" data-name="ELITE" data-monthly="34.90" data-yearly="293.16">Assinar ELITE</button>
+                    </article>
+                </div>
+                <p class="pricing-note">Pagamento seguro via cartão de crédito ou Pix. Cancele quando quiser, sem multa.</p>
+            </div>
+        </section>
+
+        <section class="compare">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Comparativo</span>
+                    <h2 class="section-title">Compare os <span class="gradient-text">planos</span></h2>
+                </div>
+                <div class="table-wrapper">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Recurso</th>
+                                <th>Free</th>
+                                <th class="hl">VIP</th>
+                                <th class="hl-elite">ELITE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Matches por dia</td><td>5</td><td>Ilimitados</td><td>Ilimitados</td></tr>
+                            <tr><td>Voice chat integrado</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                            <tr><td>Perfil em destaque</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                            <tr><td>Selo no perfil</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                            <tr><td>Boosts de perfil</td><td class="no">—</td><td>1/semana</td><td>Ilimitados</td></tr>
+                            <tr><td>Sem anúncios</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                            <tr><td>Dogtag exclusiva</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+                            <tr><td>Suporte prioritário</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Dúvidas</span>
+                    <h2 class="section-title">Perguntas <span class="gradient-text">frequentes</span></h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">Como funciona a cobrança?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer"><p>A assinatura é recorrente no cartão de crédito. No plano anual você paga 12 meses com 30% de desconto à vista. Também aceitamos Pix para o plano anual.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">Posso cancelar quando quiser?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer"><p>Sim. O cancelamento é feito em 1 clique na área da conta, sem multa e sem perguntas. Você mantém os benefícios até o fim do período pago.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">Como recebo a dogtag exclusiva do ELITE?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer"><p>Ela é digital: após assinar o ELITE, resgate a dogtag dourada grátis na <a href="loja.html">Loja</a> e equipe no seu perfil na hora.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">O que é o boost de perfil?<span class="faq-icon">+</span></button>
+                        <div class="faq-answer"><p>O boost coloca seu perfil no topo das buscas da sua região por 60 minutos, multiplicando suas chances de match em até 10x.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img class="logo-img" src="assets/logo.png?v=2" alt="GamerConnections">
+                        <span class="logo-text">GamerConnections</span>
+                    </a>
+                    <p>Conectando gamers desde 2024</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="planos.html">Planos VIP</a>
+                    <a href="loja.html">Loja</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Suporte</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GamerConnections. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de checkout da assinatura -->
+    <div class="modal-overlay" id="planModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="planModalTitle">
+            <button type="button" class="modal-close" data-close aria-label="Fechar">✕</button>
+            <div class="modal-step" data-step="payment">
+                <h2 id="planModalTitle">Finalizar assinatura</h2>
+                <div class="order-summary">
+                    <div class="order-line"><span id="planName">VIP</span><strong id="planPrice">R$ 19,90/mês</strong></div>
+                    <div class="order-line total"><span>Total hoje</span><strong id="planTotal">R$ 19,90</strong></div>
+                </div>
+                <form id="planForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="payerName">Nome completo</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="payerName" placeholder="Como está no cartão" required autocomplete="cc-name">
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Número do cartão</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="cardNumber" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19" required autocomplete="cc-number">
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cardExpiry">Validade</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="cardExpiry" inputmode="numeric" placeholder="MM/AA" maxlength="5" required autocomplete="cc-exp">
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardCvv">CVV</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="cardCvv" inputmode="numeric" placeholder="123" maxlength="4" required autocomplete="cc-csc">
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-large">
+                        <span class="btn-text">Confirmar pagamento</span>
+                        <span class="btn-loader" style="display:none">
+                            <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                                <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <p class="secure-note">Pagamento 100% seguro e criptografado (demonstração)</p>
+                </form>
+            </div>
+            <div class="modal-step" data-step="success" hidden>
+                <div class="success-check">✓</div>
+                <h2>Assinatura ativada!</h2>
+                <p class="success-text">Bem-vindo(a) ao <strong id="successPlan">VIP</strong>. Seu selo já está no perfil.</p>
+                <p class="order-code">Código: <strong id="planOrderCode">GC-000000</strong></p>
+                <button type="button" class="btn btn-primary btn-full" data-close>Começar a usar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js?v=6"></script>
+</body>
+</html>

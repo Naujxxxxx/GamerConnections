@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar - GamerConnections</title>
+    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="icon" type="image/png" href="assets/logo.png?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-requires-auth>
+    <div class="bg-animation"></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="assets/logo.png?v=2" alt="GamerConnections">
+                <span class="logo-text">GamerConnections</span>
+            </a>
+            <nav class="nav">
+                <a href="planos.html" class="nav-link">Planos</a>
+                <a href="loja.html" class="nav-link active">Loja</a>
+                <a href="login.html" class="btn btn-primary">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="hero-badge"><span class="dot"></span>Aplicação instantânea no perfil</span>
+                <h1 class="page-title">Sua dogtag, sua <span class="gradient-text">identidade</span></h1>
+                <p class="page-subtitle">Dogtags digitais para personalizar seu perfil. Escolha o estilo, grave seu nick e equipe na hora.</p>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop-grid" id="dogGrid">
+
+                    <article class="product-card" data-id="classic" data-name="Dogtag Clássica" data-price="9.90">
+                        <div class="dogtag-scene">
+                            <div class="dogtag classic">
+                                <span class="dogtag-hole"></span>
+                                <span class="dogtag-text" data-preview>SEU NICK</span>
+                                <span class="dogtag-sub">GAMERCONNECTIONS</span>
+                            </div>
+                        </div>
+                        <h3>Dogtag Clássica</h3>
+                        <p class="product-desc">Aço escovado com gravação a laser. O estilo original da comunidade.</p>
+                        <div class="engrave-box">
+                            <label>Texto gravado</label>
+                            <input type="text" class="engrave-input" maxlength="14" placeholder="Seu nick" data-engrave>
+                        </div>
+                        <div class="product-foot">
+                            <span class="product-price">R$ 9,90</span>
+                            <div data-actions></div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="neon" data-name="Dogtag Neon Ghost" data-price="14.90">
+                        <span class="featured-tag">Mais usada</span>
+                        <div class="dogtag-scene">
+                            <div class="dogtag neon">
+                                <span class="dogtag-hole"></span>
+                                <span class="dogtag-text" data-preview>SEU NICK</span>
+                                <span class="dogtag-sub">GAMERCONNECTIONS</span>
+                            </div>
+                        </div>
+                        <h3>Dogtag Neon Ghost</h3>
+                        <p class="product-desc">Preta fosca com bordas em ciano neon. A favorita da comunidade.</p>
+                        <div class="engrave-box">
+                            <label>Texto gravado</label>
+                            <input type="text" class="engrave-input" maxlength="14" placeholder="Seu nick" data-engrave>
+                        </div>
+                        <div class="product-foot">
+                            <span class="product-price">R$ 14,90</span>
+                            <div data-actions></div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="elite" data-name="Dogtag Elite Dourada" data-price="24.90">
+                        <div class="dogtag-scene">
+                            <div class="dogtag elite">
+                                <span class="dogtag-hole"></span>
+                                <span class="dogtag-text" data-preview>SEU NICK</span>
+                                <span class="dogtag-sub">ELITE MEMBER</span>
+                            </div>
+                        </div>
+                        <h3>Dogtag Elite Dourada</h3>
+                        <p class="product-desc">Dourada, numerada e com brilho exclusivo. Grátis para membros ELITE.</p>
+                        <div class="engrave-box">
+                            <label>Texto gravado</label>
+                            <input type="text" class="engrave-input" maxlength="14" placeholder="Seu nick" data-engrave>
+                        </div>
+                        <div class="product-foot">
+                            <span class="product-price" data-elite-price>R$ 24,90</span>
+                            <div data-actions></div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="shop-perks">
+                    <div class="perk"><img src="assets/icons/bolt.png" alt="" width="22" height="22"><span>Ativação imediata</span></div>
+                    <div class="perk"><img src="assets/icons/shield.png" alt="" width="22" height="22"><span>Compra protegida</span></div>
+                    <div class="perk"><img src="assets/icons/diamond.png" alt="" width="22" height="22"><span>Membros ELITE resgatam a dourada grátis</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img class="logo-img" src="assets/logo.png?v=2" alt="GamerConnections">
+                        <span class="logo-text">GamerConnections</span>
+                    </a>
+                    <p>Conectando gamers desde 2024</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="planos.html">Planos VIP</a>
+                    <a href="loja.html">Loja</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Suporte</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GamerConnections. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de compra da dogtag -->
+    <div class="modal-overlay" id="buyModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="buyModalTitle">
+            <button type="button" class="modal-close" data-close aria-label="Fechar">✕</button>
+            <div class="modal-step" data-step="payment">
+                <h2 id="buyModalTitle">Confirmar compra</h2>
+                <div class="order-summary" id="buySummary"></div>
+                <form id="buyForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="payerName">Nome completo</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="payerName" placeholder="Como está no cartão" required autocomplete="cc-name">
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Número do cartão</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="cardNumber" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19" required autocomplete="cc-number">
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cardExpiry">Validade</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="cardExpiry" inputmode="numeric" placeholder="MM/AA" maxlength="5" required autocomplete="cc-exp">
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardCvv">CVV</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="cardCvv" inputmode="numeric" placeholder="123" maxlength="4" required autocomplete="cc-csc">
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full btn-large">
+                        <span class="btn-text">Confirmar compra</span>
+                        <span class="btn-loader" style="display:none">
+                            <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                                <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <p class="secure-note">Ativação imediata após o pagamento (demonstração)</p>
+                </form>
+            </div>
+            <div class="modal-step" data-step="success" hidden>
+                <div class="success-check">✓</div>
+                <h2>Dogtag desbloqueada!</h2>
+                <p class="success-text" id="buySuccessText">Ela já está equipada no seu perfil.</p>
+                <p class="order-code">Código: <strong id="buyOrderCode">GC-000000</strong></p>
+                <button type="button" class="btn btn-primary btn-full" data-close>Ver meu perfil</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js?v=6"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <rect width="24" height="24" rx="6" fill="#1e40af"/>
+  <rect width="24" height="24" rx="6" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="12" y="17.5" font-size="13" font-weight="900" fill="#22d3ee" text-anchor="middle" font-family="Arial, sans-serif">β</text>
+</svg>

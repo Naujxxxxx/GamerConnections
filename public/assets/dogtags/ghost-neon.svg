@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 210">
+  <defs>
+    <linearGradient id="dgNBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#131a2e"/><stop offset="100%" stop-color="#05070e"/>
+    </linearGradient>
+    <clipPath id="dgNClip"><path d="M75 12 C45 12 28 38 28 70 L28 176 L38 166 L48 176 L58 166 L68 176 L78 166 L88 176 L98 166 L108 176 L118 166 L122 170 L122 70 C122 38 105 12 75 12 Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#dgNClip)">
+    <rect x="28" y="12" width="94" height="164" fill="url(#dgNBody)"/>
+    <ellipse cx="75" cy="150" rx="40" ry="30" fill="#22d3ee" opacity="0.08"/>
+    <path d="M54 54 L68 50 L68 58 L54 62 Z" fill="#22d3ee"/>
+    <path d="M96 54 L82 50 L82 58 L96 62 Z" fill="#22d3ee"/>
+  </g>
+  <path d="M75 12 C45 12 28 38 28 70 L28 176 L38 166 L48 176 L58 166 L68 176 L78 166 L88 176 L98 166 L108 176 L118 166 L122 170 L122 70 C122 38 105 12 75 12 Z" fill="none" stroke="#22d3ee" stroke-width="4"/>
+</svg>

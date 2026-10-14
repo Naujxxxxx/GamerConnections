@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 210">
+  <defs>
+    <linearGradient id="dgBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7ff"/><stop offset="100%" stop-color="#c9d6f2"/>
+    </linearGradient>
+    <clipPath id="dgClip"><path d="M75 12 C45 12 28 38 28 70 L28 176 L38 166 L48 176 L58 166 L68 176 L78 166 L88 176 L98 166 L108 176 L118 166 L122 170 L122 70 C122 38 105 12 75 12 Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#dgClip)">
+    <rect x="28" y="12" width="94" height="164" fill="url(#dgBody)"/>
+    <ellipse cx="104" cy="90" rx="20" ry="60" fill="#a9c2ef" opacity="0.7"/>
+    <ellipse cx="55" cy="45" rx="20" ry="12" fill="#ffffff" opacity="0.9"/>
+    <path d="M52 52 L68 48 L68 56 L52 60 Z" fill="#2563eb"/>
+    <path d="M98 52 L82 48 L82 56 L98 60 Z" fill="#2563eb"/>
+    <path d="M50 44 L66 41" stroke="#0a0f1e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 44 L84 41" stroke="#0a0f1e" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <path d="M75 12 C45 12 28 38 28 70 L28 176 L38 166 L48 176 L58 166 L68 176 L78 166 L88 176 L98 166 L108 176 L118 166 L122 170 L122 70 C122 38 105 12 75 12 Z" fill="none" stroke="#2563eb" stroke-width="4"/>
+</svg>
