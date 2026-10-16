@@ -16,7 +16,9 @@
     "zustand": "^4.4.7",
     "idb": "^8.0.0",
     "date-fns": "^3.0.0",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "preact": "^10.19.0",
+    "htm": "^3.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

@@ -110,12 +110,13 @@ export function renderFeed() {
     }
   }, [addToast])
 
-  const handleMediaSelect = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleMediaSelect = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (file) {
+      const { validateVideoFile, validateImageFile } = await import('@/services/storage')
       const validation = file.type.startsWith('video/') 
-        ? (await import('@/services/storage')).validateVideoFile(file)
-        : (await import('@/services/storage')).validateImageFile(file)
+        ? validateVideoFile(file)
+        : validateImageFile(file)
       
       if (!validation.valid) {
         addToast({ type: 'error', message: validation.error })

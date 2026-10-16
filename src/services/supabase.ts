@@ -336,6 +336,53 @@ export async function getFollowing(username: string) {
   return data?.map(f => f.following) || []
 }
 
+// Aliases for backward compatibility
+export const fetchFollowers = getFollowers
+export const fetchFollowing = getFollowing
+
+// ============ FRIEND REQUESTS ============
+export async function sendRequest(targetUsername: string) {
+  const user = useAuthStore.getState().user
+  if (!user) throw new Error('Não autenticado')
+  if (user.username === targetUsername) throw new Error('Não pode adicionar a si mesmo')
+
+  const { data: existing } = await from('friend_requests')
+    .select('*')
+    .eq('from_username', user.username)
+    .eq('to_username', targetUsername)
+    .maybeSingle()
+
+  if (existing) throw new Error('Solicitação já enviada')
+
+  // Check if already friends
+  const { data: alreadyFriends } = await from('follows')
+    .select('*')
+    .eq('follower', user.username)
+    .eq('following', targetUsername)
+    .maybeSingle()
+
+  if (alreadyFriends) throw new Error('Vocês já são amigos')
+
+  const { error } = await from('friend_requests').insert({
+    from_username: user.username,
+    to_username: targetUsername
+  })
+  if (error) throw error
+
+  // Notify target user
+  await createNotification({
+    type: 'follow',
+    title: 'Nova solicitação de amizade',
+    body: `${user.name} quer ser seu amigo`,
+    actorId: user.username,
+    targetId: targetUsername,
+    targetType: 'profile',
+    recipientId: targetUsername
+  })
+
+  return true
+}
+
 // ============ MATCHES ============
 export async function fetchDiscoverProfiles(excludeIds: string[] = []) {
   const user = useAuthStore.getState().user
