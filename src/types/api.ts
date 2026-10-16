@@ -12,6 +12,8 @@ export interface ApiError {
   details?: string
 }
 
+import type { Profile } from '@/types/database'
+
 export interface AuthResponse {
   user: Profile | null
   session: Session | null

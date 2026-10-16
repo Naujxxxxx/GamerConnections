@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { MatchProfile } from '@/types/ui'
+import { useAuthStore } from './auth'
 
 interface MatchesState {
   deck: MatchProfile[]

@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Post, Comment, Profile } from '@/types/database'
 import type { FeedPost, FeedComment } from '@/types/ui'
+import { useAuthStore } from './auth'
 
 interface FeedState {
   posts: FeedPost[]

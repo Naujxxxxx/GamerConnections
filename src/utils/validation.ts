@@ -120,7 +120,7 @@ export function validatePassword(password: string): { valid: boolean; error?: st
   return { valid: true }
 }
 
-export function getPasswordStrength(password: number): { score: number; label: string; color: string } {
+export function getPasswordStrength(password: string): { score: number; label: string; color: string } {
   let score = 0
   if (password.length >= 8) score++
   if (password.length >= 12) score++

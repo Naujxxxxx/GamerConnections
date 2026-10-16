@@ -1,3 +1,5 @@
+import type { Profile, Post, ChatMessage } from '@/types/database'
+
 export interface UserProfile extends Profile {
   age?: number
   rank?: string
@@ -15,7 +17,7 @@ export interface FeedPost extends Post {
 }
 
 export interface FeedComment extends Comment {
-  author: Pick<UserProfile, 'username' | 'name' | 'avatar' | 'badgeColor'>
+  author: Pick<UserProfile, 'username' | 'name' | 'avatar' | 'badge_color'>
 }
 
 export interface ChatChannel {
@@ -47,7 +49,7 @@ export interface Notification {
   type: 'like' | 'comment' | 'follow' | 'match' | 'mention' | 'message' | 'system'
   title: string
   body: string
-  actor: Pick<UserProfile, 'username' | 'name' | 'avatar'>
+  actor: Pick<UserProfile, 'username' | 'name' | 'avatar' | 'badge_color'>
   targetId?: string
   targetType?: 'post' | 'profile' | 'chat' | 'match'
   read: boolean
